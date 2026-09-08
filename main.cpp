@@ -11,9 +11,9 @@ int main() {
     cout << "Welcome to QInstaller!" << endl;
 
     while (true) {
-        cout << "[0]Package Install" << endl;
-        cout << "[1]Package Delete" << endl;
-        cout << "[2]Package Search" << endl;
+        cout << "[Install] Package Install" << endl;
+        cout << "[Delete] Package Delete" << endl;
+        cout << "[Search] Package Search" << endl;
         cout << "Input: ";
         cin >> choise;
 
@@ -27,7 +27,7 @@ int main() {
             choise_search();
         }
         else {
-            cout << "Wrong Input!";
+            cout << "Wrong Input!" << endl;
         }
     }
     return 0;
