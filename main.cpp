@@ -3,6 +3,7 @@
 #include "src/choise_install.cpp"
 #include "src/choise_search.cpp"
 #include "src/choise_update.cpp"
+#include "src/choise_quit.cpp"
 
 using namespace std;
 
@@ -33,7 +34,7 @@ int main() {
             choise_update();
         }
         else if (choise == "quit" || choise == "Quit") {
-            choise_update();
+            choise_quit();
         }
         else {
             cout << "Wrong Input!" << endl;
