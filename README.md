@@ -6,6 +6,7 @@ Pacman ve Yay için basit bir terminal menüsü. Paket kurma/silme işlemlerini 
 
 - Paket kurma (`pacman -S` / `yay -S`)
 - Paket silme (`pacman -Rns` / `yay -Rns`)
+- Paket arama (`pacman -Ss` / `yay -Ss`)
 - Pacman veya Yay seçimi
 
 ## Derleme
