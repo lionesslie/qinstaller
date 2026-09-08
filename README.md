@@ -1,12 +1,12 @@
 # QInstaller
 
-Pacman ve Yay için basit bir terminal menüsü. Paket kurma/silme işlemlerini interaktif olarak yapmanızı sağlar.
+Pacman ve Yay için basit bir terminal menüsü.
 
 ## Özellikler
 
-- Paket kurma (`pacman -S` / `yay -S`)
-- Paket silme (`pacman -Rns` / `yay -Rns`)
-- Paket arama (`pacman -Ss` / `yay -Ss`)
+- Paket Kurma (`pacman -S` / `yay -S`)
+- Paket Silme (`pacman -Rns` / `yay -Rns`)
+- Paket Arama (`pacman -Ss` / `yay -Ss`)
 - Pacman veya Yay seçimi
 
 ## Derleme
