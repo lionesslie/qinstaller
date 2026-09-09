@@ -4,9 +4,10 @@ Pacman ve Yay için basit bir terminal menüsü.
 
 ## Özellikler
 
-- Paket Kurma (`pacman -S` / `yay -S`)
-- Paket Silme (`pacman -Rns` / `yay -Rns`)
-- Paket Arama (`pacman -Ss` / `yay -Ss`)
+- Paket Kurma
+- Paket Silme
+- Paket Arama
+- Sistemi Güncelleme
 - Pacman veya Yay seçimi
 
 ## Derleme
