@@ -25,4 +25,4 @@ cargo run yada ./qinstaller
 ## Gereksinimler
 
 - Rust
-- Arch tabanlı bir dağıtım (pacman) ve/veya yay kurulu olmalı
+- Archlinux
