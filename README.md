@@ -13,16 +13,16 @@ Pacman ve Yay için basit bir terminal menüsü.
 ## Derleme
 
 ```bash
-g++ main.cpp -o qinstaller
+cargo build
 ```
 
 ## Kullanım
 
 ```bash
-./qinstaller
+cargo run yada ./qinstaller
 ```
 
 ## Gereksinimler
 
-- g++ (C++11 veya üzeri)
+- Rust
 - Arch tabanlı bir dağıtım (pacman) ve/veya yay kurulu olmalı
