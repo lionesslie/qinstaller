@@ -13,7 +13,7 @@ pub fn delete() {
     let package = package.trim();
 
     Command::new("yay")
-        .arg("-R")
+        .arg("-Rns")
         .arg(package)
         .status()
         .expect("Failed!");

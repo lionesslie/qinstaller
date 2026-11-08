@@ -3,6 +3,7 @@ use std::io;
 mod module{
     pub mod install;
     pub mod delete;
+    pub mod update;
 }
 
 fn main(){
@@ -21,6 +22,9 @@ fn main(){
 
     if input == "install" || input == "Install" {
         module::install::install();   
+    }
+    if input == "update" || input == "Update" {
+        module::update::update();
     }
     else if input == "delete" || input == "Delete" {
         module::delete::delete();
