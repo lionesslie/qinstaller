@@ -18,9 +18,9 @@ pub fn update() {
     let input = input.trim();
 
     if input == "pacman" || input == "Pacman" {
-        update_pacman::install();
+        update_pacman::update();
     }
     else if input == "yay" || input == "Yay" {
-        update_yay::install();
+        update_yay::update();
     }
 }

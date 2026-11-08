@@ -1,7 +1,7 @@
 use std::io;
 use std::process::Command;
 
-pub fn install() {
+pub fn update() {
     let mut package = String::new();
 
     println!("Package: ");

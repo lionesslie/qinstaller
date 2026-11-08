@@ -1,6 +1,5 @@
 use std::io;
 
-
 #[path = "lib/install_pacman.rs"]
 pub mod install_pacman;
 #[path = "lib/install_yay.rs"]
