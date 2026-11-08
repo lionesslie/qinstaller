@@ -6,7 +6,6 @@ Pacman ve Yay için basit bir terminal menüsü.
 
 - Paket Kurma
 - Paket Silme
-- Paket Arama
 - Sistemi Güncelleme
 - Pacman veya Yay seçimi
 
