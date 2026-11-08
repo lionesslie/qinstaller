@@ -11,7 +11,8 @@ fn main(){
 
     let mut input = String::new();
     
-    println!("Install or Delete: ");
+    println!(" Install or Delete or Update: ");
+    
 
     io::stdin()
         .read_line(&mut input)
@@ -23,7 +24,7 @@ fn main(){
     if input == "install" || input == "Install" {
         module::install::install();   
     }
-    if input == "update" || input == "Update" {
+    else if input == "update" || input == "Update" {
         module::update::update();
     }
     else if input == "delete" || input == "Delete" {
