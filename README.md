@@ -1,56 +1,74 @@
 # QInstaller
 
-Pacman ve Yay için basit bir terminal menüsü.
+Pacman ve Yay paket yöneticileri için geliştirilmiş basit bir terminal aracı.
 
 ## Özellikler
 
-- Paket Kurma
-- Paket Silme
-- Sistemi Güncelleme
+- Paket kurma
+- Paket silme
+- Paket arama
+- Sistem güncelleme
 - Pacman veya Yay seçimi
+
+## Gereksinimler
+
+- Arch Linux
+- Rust
+- Cargo
+- Yay (AUR desteği kullanılacaksa)
 
 ## Derleme
 
+Projeyi klonladıktan sonra proje dizinine girin:
+
 ```bash
-cargo build
+git clone https://github.com/lionesslie/qinstaller.git
+cd qinstaller
+```
+
+Projeyi derlemek için:
+
+```bash
+cargo build --release
 ```
 
 ## Kullanım
 
-```bash
-cargo run yada ./qinstaller
-```bash
-
-## Gereksinimler
-
-- Rust
-- Archlinux
-
-## Dosya Ağacı
+Cargo ile çalıştırmak için:
 
 ```bash
+cargo run
+```
 
-qinstaller
- ┣ src
- ┃ ┣ module
- ┃ ┃ ┣ backend
- ┃ ┃ ┃ ┣ pacman
- ┃ ┃ ┃ ┃ ┣ delete_pacman.rs
- ┃ ┃ ┃ ┃ ┣ install_pacman.rs
- ┃ ┃ ┃ ┃ ┣ search_pacman.rs
- ┃ ┃ ┃ ┃ ┗ update_pacman.rs
- ┃ ┃ ┃ ┗ yay
- ┃ ┃ ┃ ┃ ┣ delete_yay.rs
- ┃ ┃ ┃ ┃ ┣ install_yay.rs
- ┃ ┃ ┃ ┃ ┣ search_yay.rs
- ┃ ┃ ┃ ┃ ┗ update_yay.rs
- ┃ ┃ ┣ delete.rs
- ┃ ┃ ┣ install.rs
- ┃ ┃ ┣ search.rs
- ┃ ┃ ┗ update.rs
- ┃ ┗ main.rs
- ┣ .gitignore
- ┣ Cargo.lock
- ┗ Cargo.toml
+Derlenmiş uygulamayı çalıştırmak için:
 
+```bash
+./target/release/qinstaller
+```
+
+## Dosya Yapısı
+
+```text
+qinstaller/
+┣ src/
+┃ ┣ module/
+┃ ┃ ┣ backend/
+┃ ┃ ┃ ┣ pacman/
+┃ ┃ ┃ ┃ ┣ delete_pacman.rs
+┃ ┃ ┃ ┃ ┣ install_pacman.rs
+┃ ┃ ┃ ┃ ┣ search_pacman.rs
+┃ ┃ ┃ ┃ ┗ update_pacman.rs
+┃ ┃ ┃ ┗ yay/
+┃ ┃ ┃   ┣ delete_yay.rs
+┃ ┃ ┃   ┣ install_yay.rs
+┃ ┃ ┃   ┣ search_yay.rs
+┃ ┃ ┃   ┗ update_yay.rs
+┃ ┃ ┣ delete.rs
+┃ ┃ ┣ install.rs
+┃ ┃ ┣ search.rs
+┃ ┃ ┗ update.rs
+┃ ┗ main.rs
+┣ .gitignore
+┣ Cargo.lock
+┗ Cargo.toml
 ```
