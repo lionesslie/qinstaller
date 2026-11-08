@@ -1,8 +1,8 @@
 use std::io;
 
-#[path = "lib/search_pacman.rs"]
+#[path = "backend/pacman/search_pacman.rs"]
 pub mod search_pacman;
-#[path = "lib/search_yay.rs"]
+#[path = "backend/yay/search_yay.rs"]
 pub mod search_yay;
 
 

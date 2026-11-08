@@ -1,9 +1,8 @@
 use std::io;
 
-
-#[path = "lib/delete_pacman.rs"]
+#[path = "backend/pacman/delete_pacman.rs"]
 pub mod delete_pacman;
-#[path = "lib/delete_yay.rs"]
+#[path = "backend/yay/delete_yay.rs"]
 pub mod delete_yay;
 
 
